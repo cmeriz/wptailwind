@@ -15,7 +15,7 @@
     @import "base/fonts";
 
 // Abstracts
-    @import "abstracts/variables";
+    @import "abstracts/colors";
     @import "abstracts/mixins";
 
 // Layout
@@ -23,4 +23,4 @@
     @import "layout/footer";
 
 // Pages
-    @import "pages/home";
+    @import "views/home";
