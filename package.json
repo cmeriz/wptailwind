@@ -9,9 +9,12 @@
     "postcss-cli": "^9.0.1",
     "tailwindcss": "^2.2.16"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "postcss-import": "^14.0.2"
+  },
   "scripts": {
-    "watch": "npx postcss ./assets/src/tailwind.css -o ./assets/css/tailwind.css --watch",
+    "build": "postcss assets/src/main.css -o assets/css/main.css",
+    "watch": "postcss assets/src/main.css -o assets/css/main.css --watch",
     "zip": "git archive --format zip --output C:/Users/carlo/Desktop/wptailwind.zip main"
   },
   "author": "",

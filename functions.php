@@ -30,7 +30,7 @@ function wptailwind_scripts() {
 	wp_enqueue_style( 'style', get_stylesheet_uri(), array(), $version);
 
     // main.css
-    wp_enqueue_style( 'tailwind', get_stylesheet_directory_uri() . '/assets/css/tailwind.css', $version, true );
+    wp_enqueue_style( 'main', get_stylesheet_directory_uri() . '/assets/css/main.css', $version, true );
 }
 
 /* -------------------------------------------------------------------------- */
