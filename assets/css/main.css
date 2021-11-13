@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-/*! tailwindcss v2.2.16 | MIT License | https://tailwindcss.com */
+/* line 1, ../scss/base/_reset.scss */
+html, body {
+  font-size: 1rem;
+}
+/* ! tailwindcss v2.2.16 | MIT License | https://tailwindcss.com */
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -471,5 +475,63 @@ video {
  */
 [hidden] {
   display: none;
+}
+.container{
+  width: 100%;
+}
+@media (min-width: 20rem){
+  .container{
+    max-width: 20rem;
+  }
+}
+@media (min-width: 30rem){
+  .container{
+    max-width: 30rem;
+  }
+}
+@media (min-width: 40rem){
+  .container{
+    max-width: 40rem;
+  }
+}
+@media (min-width: 48rem){
+  .container{
+    max-width: 48rem;
+  }
+}
+@media (min-width: 56rem){
+  .container{
+    max-width: 56rem;
+  }
+}
+@media (min-width: 64rem){
+  .container{
+    max-width: 64rem;
+  }
+}
+@media (min-width: 80rem){
+  .container{
+    max-width: 80rem;
+  }
+}
+@media (min-width: 96rem){
+  .container{
+    max-width: 96rem;
+  }
+}
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.font-bold{
+  font-weight: 700;
+}
+.text-primary-500{
+  --tw-text-opacity: 1;
+  color: rgba(26, 172, 122, var(--tw-text-opacity));
 }
 /*# sourceMappingURL=main.css.map */

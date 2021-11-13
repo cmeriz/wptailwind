@@ -1,13 +1,15 @@
-// Base
-    @import "base/fonts";
-
 // Abstracts
     @import "abstracts/colors";
+    @import 'abstracts/fonts';
     @import "abstracts/mixins";
+    @import 'abstracts/helpers';
+
+// Base
+    @import 'base/reset';
 
 // Layout
     @import "layout/header";
     @import "layout/footer";
 
-// Pages
+// Views
     @import "views/home";

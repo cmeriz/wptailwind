@@ -1,6 +1,6 @@
 <?php 
 
-const WPTAILWIND_THEME_VERSION = '1.0.0';
+const WPTAILWIND_THEME_VERSION = '1.0.1';
 const WP_ENVIRONMENT_TYPE = 'development';
 
 
@@ -30,7 +30,7 @@ function wptailwind_scripts() {
 	wp_enqueue_style( 'style', get_stylesheet_uri(), array(), $version);
 
     // main.css
-    wp_enqueue_style( 'main', get_stylesheet_directory_uri() . '/assets/css/main.css', $version, true );
+    wp_enqueue_style( 'main', get_stylesheet_directory_uri() . '/assets/css/main.css', array(), $version );
 }
 
 /* -------------------------------------------------------------------------- */
@@ -67,3 +67,22 @@ function wptailwind_widgets(){
 }
 
 add_action('widgets_init', 'wptailwind_widgets');
+
+/* -------------------------------------------------------------------------- */
+/*                             Custom Logo Support                            */
+/* -------------------------------------------------------------------------- */
+
+function wptailwind_custom_logo_setup() {
+    $defaults = array(
+        'height'               => 100,
+        'width'                => 100,
+        'flex-height'          => true,
+        'flex-width'           => true,
+        'header-text'          => array( 'site-title', 'site-description' ),
+        'unlink-homepage-logo' => true, 
+    );
+ 
+    add_theme_support( 'custom-logo', $defaults );
+}
+ 
+add_action( 'after_setup_theme', 'wptailwind_custom_logo_setup' );

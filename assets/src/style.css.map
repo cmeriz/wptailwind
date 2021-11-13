@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAQ,kMAA0L",
-"sources": ["../scss/base/_fonts.scss"],
+"mappings": "AAAQ,kMAA0L;;ACAlM,UAAU;EACN,SAAS,EAAE,IAAI",
+"sources": ["../scss/abstracts/_fonts.scss","../scss/base/_reset.scss"],
 "names": [],
 "file": "style.css"
 }
